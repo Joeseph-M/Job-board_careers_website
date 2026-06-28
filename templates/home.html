@@ -5,15 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <style>
+            #banner {
+                height: 360px; 
+                width: 100%;
+            }
+        </style>
 </head>
 
 <body>
     <div class="container">
-        <h1>Company Careers</h1>
-        <img id='banner' src="{{ url_for ('static', filename='banner.jpg')}}"
+        <h1 class="text-center">Company Careers</h1>
+        <img class="img-fluid" id='banner' src="{{ url_for ('static', filename='banner.jpg')}}"
             alt="Company Banner"> 
 
-        <h2>Welcome to our careers page</h2>
+        <h2 class="text-center">Welcome to our careers page</h2>
         <p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec elit non dolor vehicula tempus. Proin posuere libero sit amet odio pellentesque, eget venenatis ipsum vulputate. Sed non blandit augue. 
             Donec feugiat arcu vel turpis posuere lacinia. Maecenas fermentum nibh ut libero consectetur congue. Praesent efficitur lectus non orci condimentum eleifend. Curabitur vel laoreet enim. 
